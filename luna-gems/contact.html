@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+      <title>Luna Gems | Contact Us - Jewelry Stores in Manila, Batangas & More</title>
+    
+      <meta name="description" content="Contact Luna Gems for jewelry inquiries. Visit our stores in Manila, Batangas, and San Pablo City or reach out online today.">
+    
+      <meta name="keywords" content="Luna Gems, contact jewelry store, jewelry inquiries, Manila jewelry store, Batangas jewelry, San Pablo City jewelry, luxury jewelry contact">
+ 
+      <meta name="robots" content="index, follow">
+ 
+      <meta name="author" content="Luna Gems Team">
+      
+      <meta property="og:title" content="Luna Gems | Contact Us">
+      <meta property="og:description" content="Reach Luna Gems for exquisite jewelry inquiries. Visit us in Manila, Batangas, or San Pablo City.">
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="http://127.0.0.1:5500/contact.html">
+      <meta property="og:image" content="/img/Bg/Contact/Bg2.jpg"> 
+
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:title" content="Luna Gems | Contact Us">
+      <meta name="twitter:description" content="Contact Luna Gems for jewelry needs. Stores in Manila, Batangas, and San Pablo City.">
+      <meta name="twitter:image" content="/img/Bg/Contact/Bg2.jpg">
+
+      <!-- <link rel="icon" type="image/png" href="/favicon.png"> -->
+   
+      <link rel="stylesheet" href="styles.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lucide-icons@latest/dist/umd/lucide.min.css">
+    </head>
+<body>
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container">
+      <div class="navbar-content">
+        <a href="index.html" class="logo">Luna Gems</a>
+        
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <button class="dropdown-trigger">Collections <i data-lucide="chevron-down"></i></button>
+              <div class="dropdown-content">
+                <a href="products.html">All Jewelry</a>
+                <a href="products.html?category=rings">Rings</a>
+                <a href="products.html?category=necklaces">Necklaces</a>
+                <a href="products.html?category=earrings">Earrings</a>
+                <a href="products.html?category=bracelets">Bracelets</a>
+              </div>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+        </nav>
+        
+        <!-- Desktop Actions -->
+        <div class="desktop-actions">
+          <button class="icon-button"><i data-lucide="search"></i></button>
+          <button class="icon-button"><i data-lucide="user"></i></button>
+          <button class="icon-button cart-button">
+            <i data-lucide="shopping-bag"></i>
+            <span class="cart-count">0</span>
+          </button>
+        </div>
+        
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-button">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <nav class="container">
+        <ul class="mobile-nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li class="mobile-dropdown">
+            <div class="mobile-dropdown-header">Collections</div>
+            <ul class="mobile-dropdown-content">
+              <li><a href="products.html">All Jewelry</a></li>
+              <li><a href="products.html?category=rings">Rings</a></li>
+              <li><a href="products.html?category=necklaces">Necklaces</a></li>
+              <li><a href="products.html?category=earrings">Earrings</a></li>
+              <li><a href="products.html?category=bracelets">Bracelets</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <div class="mobile-actions">
+          <a href="#" class="mobile-action-link"><i data-lucide="search"></i> Search</a>
+          <a href="#" class="mobile-action-link"><i data-lucide="user"></i> Account</a>
+          <a href="#" class="mobile-action-link"><i data-lucide="shopping-bag"></i> Cart (0)</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="page-hero">
+      <div class="hero-background" style="background-image: url('img/Bg/Contact/Bg2.jpg')">
+        <div class="overlay"></div>
+      </div>
+      <div class="container hero-content">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you</p>
+      </div>
+    </section>
+
+    <!-- Contact Form and Info -->
+    <section class="section">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Contact Form -->
+          <div class="contact-form-container">
+            <h2 class="section-title">Get in Touch</h2>
+            
+            <div class="form-success" id="form-success">
+              <i data-lucide="check-circle" class="success-icon"></i>
+              <h3 class="success-title">Thank You!</h3>
+              <p class="success-text">Your message has been sent successfully. We'll get back to you shortly.</p>
+              <button class="btn btn-primary" id="new-message-btn">Send Another Message</button>
+            </div>
+            
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <label for="name">Full Name <span class="required">*</span></label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="email">Email Address <span class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Your phone number">
+              </div>
+              
+              <div class="form-group">
+                <label for="subject">Subject <span class="required">*</span></label>
+                <select id="subject" name="subject" required>
+                  <option value="" disabled selected>Select a subject</option>
+                  <option value="general">General Inquiry</option>
+                  <option value="appointment">Book an Appointment</option>
+                  <option value="custom">Custom Design Request</option>
+                  <option value="support">Customer Support</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Message <span class="required">*</span></label>
+                <textarea id="message" name="message" placeholder="How can we help you?" rows="5" required></textarea>
+              </div>
+              
+              <button type="submit" class="btn btn-primary btn-full" id="submit-btn">Send Message</button>
+            </form>
+          </div>
+          
+           <!-- Contact Information -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title" style="color: #9c6b4f;">Visit Our Boutiques</h2>
+    <div class="location-cards">
+      <div class="location-card" style="border: 2px solid #d3a170;">
+        <h3 class="location-name" style="color: #333;">San Pablo City Boutique</h3>
+        <div class="location-details">
+          <div class="location-item">
+            <i data-lucide="map-pin" style="color: #d3a170;"></i>
+            <span style="color: #555;">San Pablo City, Laguna, Philippines</span>
+          </div>
+          <div class="location-item">
+            <i data-lucide="phone" style="color: #d35b5b;"></i>
+            <span style="color: #555;">+63 49 123 4567</span>
+          </div>
+          <div class="location-item">
+            <i data-lucide="mail" style="color: #a682e1;"></i>
+            <span style="color: #555;">sanpablo@lunagems.com</span>
+          </div>
+          <div class="location-item">
+            <i data-lucide="clock" style="color: #f4a460;"></i>
+            <span style="color: #555;">Mon-Sat: 10am-7pm, Sun: Closed</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="location-card" style="border: 2px solid #d3a170;">
+        <h3 class="location-name" style="color: #333;">Batangas Boutique</h3>
+        <div class="location-details">
+          <div class="location-item">
+            <i data-lucide="map-pin" style="color: #d3a170;"></i>
+            <span style="color: #555;">Batangas City, Batangas, Philippines</span>
+          </div>
+          <div class="location-item">
+            <i data-lucide="phone" style="color: #d35b5b;"></i>
+            <span style="color: #555;">+63 43 987 6543</span>
+          </div>
+          <div class="location-item">
+            <i data-lucide="mail" style="color: #a682e1;"></i>
+            <span style="color: #555;">batangas@lunagems.com</span>
+          </div>
+          <div class="location-item">
+            <i data-lucide="clock" style="color: #f4a460;"></i>
+            <span style="color: #555;">Mon-Sat: 10am-8pm, Sun: 12pm-6pm</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="location-card" style="border: 2px solid #d3a170;">
+        <h3 class="location-name" style="color: #333;">Manila Flagship</h3>
+        <div class="location-details">
+          <div class="location-item">
+            <i data-lucide="map-pin" style="color: #d3a170;"></i>
+            <span style="color: #555;">Makati, Metro Manila, Philippines</span>
+          </div>
+          <div class="location-item">
+            <i data-lucide="phone" style="color: #d35b5b;"></i>
+            <span style="color: #555;">+63 2 765 4321</span>
+          </div>
+          <div class="location-item">
+            <i data-lucide="mail" style="color: #a682e1;"></i>
+            <span style="color: #555;">manila@lunagems.com</span>
+          </div>
+          <div class="location-item">
+            <i data-lucide="clock" style="color: #f4a460;"></i>
+            <span style="color: #555;">Mon-Sun: 11am-7pm</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="section bg-light">
+      <div class="container">
+        <h2 class="section-title text-center">Find Us</h2>
+        <div class="map-container">
+          <!-- Embedded Google Map -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30959.302365305997!2d121.32088460989513!3d14.082315457844214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd5cdecc5ea9ef%3A0xde5d6f6c9e46d1c2!2sLaguna%20State%20Polytechnic%20University%20-%20San%20Pablo%20City!5e0!3m2!1sen!2sph!4v1743768092582!5m2!1sen!2sph"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>    
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-main">
+      <div class="footer-grid">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">Luna Gems</a>
+          <p class="footer-description">Exquisite jewelry crafted with passion and precision for life's most precious moments.</p>
+          <div class="social-links">
+            <a href="#" class="social-link"><i data-lucide="facebook"></i><span class="sr-only">Facebook</span></a>
+            <a href="#" class="social-link"><i data-lucide="instagram"></i><span class="sr-only">Instagram</span></a>
+            <a href="#" class="social-link"><i data-lucide="twitter"></i><span class="sr-only">Twitter</span></a>
+            <a href="#" class="social-link"><i data-lucide="youtube"></i><span class="sr-only">YouTube</span></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Shop</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+
+        <!-- Collections -->
+        <div class="footer-links">
+          <h3 class="footer-title">Collections</h3>
+          <ul class="footer-menu">
+            <li><a href="products.html?category=rings">Rings</a></li>
+            <li><a href="products.html?category=necklaces">Necklaces</a></li>
+            <li><a href="products.html?category=earrings">Earrings</a></li>
+            <li><a href="products.html?category=bracelets">Bracelets</a></li>
+            <li><a href="#">Wedding Collection</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+  <div class="footer-contact">
+    <h3 class="footer-title">Contact Us</h3>
+    <address>
+      <p>Makati, Metro Manila, Philippines</p>
+      <p><a href="tel:+63298765432">+63 2 9876 5432</a></p>
+      <p><a href="mailto:info@lunagems.com">info@lunagems.com</a></p>
+    </address>
+  </div>
+
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-content">
+        <div class="copyright">
+          &copy; <span id="current-year"></span> Luna Gems. All rights reserved.
+        </div>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Shipping & Returns</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
